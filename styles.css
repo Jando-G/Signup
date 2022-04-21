@@ -1,0 +1,71 @@
+@font-face {
+    font-family: Norse-Bold;
+    src: url(./Assets/Norse-Bold.otf);
+}
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300;400;500;600&display=swap');
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color:rgb(245, 245, 245);
+    margin: 0;
+    font-family: 'Akshar', sans-serif;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: repeat(3, 1fr);
+    height: 100vh;
+}
+.image {
+    background-image: url("./Assets/photo-1597019558926-3eef445fdf60.avif");
+    background-repeat: no-repeat;
+    background-position: center center;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    position: relative;
+}
+.logo {
+    color: white;
+    font-size: min(8rem, 10vw);
+    font-family: Norse-Bold, Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: rgba(0, 0, 0, .4);
+    margin-top: 17vh; /*Automate this with calc() so it stays aligned*/
+}
+.description {
+    padding-top: 10vh;
+    padding-left: 3vw;
+    padding-right: 10vw;
+    grid-column: 2;
+    font-weight: 600;
+    font-size: min(1.5rem, 5vw);
+}
+.bottom {
+    grid-column: 2;
+}
+.credit {
+    color: white;
+    position: absolute;
+    bottom: 16px;
+    width: 40%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    text-align: center;
+    font-size: min(1rem, 4vw);
+}
+.form {
+    background-color: white;
+    grid-column: 2;
+    padding-left: 3vw;
+    padding-right: 10vw;
+}
+a {
+    color: white;
+}
