@@ -39,13 +39,26 @@ body {
     background-size: cover;
     position: relative;
 }
-.logo {
-    color: white;
-    font-size: 6rem;
-    font-family: Norse-Bold, Arial, Helvetica, sans-serif;
-    text-align: center;
-    background-color: rgba(0, 0, 0, .4);
+.header {
     margin-top: 185px;
+    background-color: rgba(0, 0, 0, .4);
+    height: 110px;
+}
+.header h1 {
+    position: relative;
+    left: 12vw;
+    top: 15px;
+    color: white;
+    font-size: 5rem;
+    font-family: Norse-Bold, Arial, Helvetica, sans-serif;
+}
+.header img {
+    position: relative;
+    top: -70px;
+    left: 8vw;
+    float: left;
+    width: 68.4px; 
+    height: 91.44px;
 }
 .description {
     padding-top: 11.5vh;
@@ -122,6 +135,7 @@ section > div {
     padding-left: 2.5vw;
     margin-top: 2vw;
     font-size: 1rem;
+    padding-bottom: 50px;
 }
 button {
     border: none;
@@ -132,6 +146,7 @@ button {
     color:rgb(255, 255, 255);
     border-radius: 8px;
     height: 2.8rem;
+    box-shadow: 2px 4px 6px #b4b9c0;
 }
 .bottom > div {
     margin-top: 25px;
