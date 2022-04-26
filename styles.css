@@ -156,3 +156,17 @@ button {
     color:rgb(231, 131, 73);
     text-decoration: none;
 }
+input + span {
+    position: relative;
+  }
+  
+  input:required + span::after {
+    font-size: 0.7rem;
+    position: absolute;
+    content: "required*";
+    color: rgb(0, 0, 0);
+    padding: 4px 10px;
+    top: -50px;
+    left: 205px;
+    border-radius: 4px;
+  }
