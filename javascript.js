@@ -3,7 +3,7 @@ var password = document.getElementById("pass")
 
 function validatePassword() {
     if(password.value != confirm_password.value) {
-        confirm_password.setCustomValidity("* Passwords do not match");
+        confirm_password.setCustomValidity("*Passwords do not match");
     } else {
         confirm_password.setCustomValidity('');
     }

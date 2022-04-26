@@ -39,6 +39,7 @@ body {
     background-size: cover;
     position: relative;
 }
+/* idk how to center stuff correctly. Leave me alone ;-; */
 .header {
     margin-top: 185px;
     background-color: rgba(0, 0, 0, .4);
@@ -101,6 +102,7 @@ h1 {
     color: white;
 }
 input {
+    -webkit-appearance: none;
     display: block;
     font-weight: 500;
     padding-left: 10px;
@@ -165,8 +167,29 @@ input + span {
     position: absolute;
     content: "required*";
     color: rgb(0, 0, 0);
-    padding: 4px 10px;
-    top: -50px;
-    left: 205px;
+    top: -46px;
+    left: 215px;
     border-radius: 4px;
+  }
+  input:not(:placeholder-shown):invalid + span::before {
+    font-size: 0.7rem;
+    position: absolute;
+    color: rgb(194, 33, 33);
+    border-radius: 4px;
+    width: 17rem;
+  }
+  input[pattern="[A-Za-z]{1,32}"]:not(:placeholder-shown):invalid + span::before {
+    content: "*names can only contain letters";
+  }
+  input[type="email"]:not(:placeholder-shown):invalid + span::before {
+    content: "*please format as example@email.com";
+  }
+  input[type="tel"]:not(:placeholder-shown):invalid + span::before {
+    content: "*invalid phone number";
+  }
+  input[name="pass"]:not(:placeholder-shown):invalid + span::before {
+    content: "*Passord must contain atleast one character, one special character and one number";
+  }
+  input[name="cpass"]:not(:placeholder-shown):invalid + span::before {
+    content: "*Passwords do not match";
   }
