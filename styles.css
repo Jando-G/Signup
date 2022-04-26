@@ -116,7 +116,7 @@ input:focus {
     border-color: rgb(71, 71, 255);
     box-shadow: 0 0 10px #719ECE;
 }
-input:invalid {
+input:not(:placeholder-shown):invalid {
     outline: none;
     border-color: rgb(194, 33, 33);
 }
