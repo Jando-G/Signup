@@ -42,22 +42,24 @@ body {
 /* idk how to center stuff correctly. Leave me alone ;-; */
 .header {
     margin-top: 185px;
+    width: 100%;
     background-color: rgba(0, 0, 0, .4);
     height: 110px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
 }
 .header h1 {
-    position: relative;
-    left: 12vw;
-    top: 15px;
+    display: flex;
+    margin: 0;
+    align-items: center;
+    height: 100%;
     color: white;
     font-size: 5rem;
     font-family: Norse-Bold, Arial, Helvetica, sans-serif;
 }
 .header img {
-    position: relative;
-    top: -70px;
-    left: 8vw;
-    float: left;
     width: 68.4px; 
     height: 91.44px;
 }
@@ -93,7 +95,7 @@ body {
     padding-left: 2.5vw;
     padding-right: 15vw;
     box-shadow: 0 6px 10px #bcc0c5;
-    padding-bottom: 20px;
+    padding-bottom: 3rem;
 }
 h1 {
     margin-bottom: 0;
